@@ -41,8 +41,6 @@ const mode = (arr) => {
 
     //convert highest key from string to int and return the mode
     return Number(highestKey);
-
-    //if multiple modes, return the highest value
 }
 
 console.log(modemean([6, 6, 7, 7, 7, 8, 8]))
