@@ -1,14 +1,11 @@
 const largestAndSmallest = (array) => {
-    //create new array with the results of the sorting function
+    //create sortedArray with
+    //the result of the sorting function
     const sortedArray = sorting(array);
-    
-    //create second new array and push sortedArray at
-    //indices 0 and length - 1
-    const returnArray = [];
-    returnArray.push(sortedArray[0]);
-    returnArray.push(sortedArray[sortedArray.length - 1]);
 
-    return returnArray;
+    //return first and last values
+    //of the sorted array
+    return [sortedArray[0], sortedArray[sortedArray.length - 1]];
 }
 
 const sorting = (input) => input.sort((a, b) => a - b);
