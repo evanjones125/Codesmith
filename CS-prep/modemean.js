@@ -20,9 +20,9 @@ const mode = (arr) => {
     arr.forEach(number => {
         //if number does not exist as a key in storage,
         //set it as a key with a value pair of 1
-        if (!storage[number]) {
-            storage[number] = 1;
-        } else {storage[number] += 1};
+        if (storage[number]) {
+            storage[number] += 1;
+        } else {storage[number] = 1};
     })
 
     //create storage variable that can account for potential of negative value modes
