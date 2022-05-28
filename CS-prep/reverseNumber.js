@@ -1,11 +1,3 @@
-const reverseNumber = (num) => {
-    let newNum = "";
+const reverseNumber = num => Number(Math.abs(num).toString().split("").reverse().join(""));
 
-    newNum += num;
-
-    return newNum.split("").reverse().join("");
-
-    return newNum;
-}
-
-console.log(reverseNumber(10000));
+console.log(reverseNumber(-107));
