@@ -8,4 +8,4 @@ const reverseNumber = (num) => {
     return newNum;
 }
 
-console.log(reverseNumber(456));
+console.log(reverseNumber(10000));
