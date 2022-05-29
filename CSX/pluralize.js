@@ -2,6 +2,10 @@
 const pluralize = (arr, instructions) => {
     const output = [];
 
+    for (let i = 0; i < arr.length; i++) {
+        output.push(addS(arr[i]));
+    }
+
     return output;
 }
 
