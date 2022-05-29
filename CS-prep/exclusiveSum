@@ -1,0 +1,16 @@
+const exclusiveSum = arr => {
+    
+    
+    //find the sum of the indices
+    let indices = 0;
+    for ()
+}
+
+function exclusiveSumTests() {
+    console.log(exclusiveSum([1,3,4,2]), ' -> ', [9, 7, 6, 8]);
+    console.log(exclusiveSum([1,2,5]), ' -> ', [7, 6, 3]);
+    console.log(exclusiveSum([1,2,5,0]), ' -> ', [7, 6, 3, 8]);
+    console.log(exclusiveSum([1]), ' -> ', [0]);
+  }
+  
+  exclusiveSumTests()
