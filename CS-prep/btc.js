@@ -1,5 +1,9 @@
 //create a function that searches for a specific date
 
+
+
+
+
 const findDate = (date) => {
     for (let i = 0; i < bitcoinData.length; i++) {
         //if any of the values of the object at position i

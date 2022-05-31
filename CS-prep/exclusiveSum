@@ -3,7 +3,7 @@ const exclusiveSum = arr => {
     
     //find the sum of the indices
     let indices = 0;
-    for ()
+    //for ()
 }
 
 function exclusiveSumTests() {
