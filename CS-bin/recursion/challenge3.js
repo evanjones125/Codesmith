@@ -1,13 +1,20 @@
+
+
+
 function palindrome(string) {
-    if (string.length <= 1) return true;
     
+    if (string.length <= 1) return true;
+
     else {
-        if (string[0].replace(/ |-|,/gi, '').toLowerCase() === string[string.length - 1].replace(/ |-|,/gi, '').toLowerCase()) {
-            const newStr = string.replace(/ |-|,/gi, '').toLowerCase()
+
+        if (string[0].replace(/ |-|,/g, '').toLowerCase() === string[string.length - 1].replace(/ |-|,/g, '').toLowerCase()) {
+
+            const newStr = string.replace(/ |-|,/g, '').toLowerCase()
+
             return palindrome(newStr.slice(1, -1));
-        } else {
-            return false;
-        }
+        } 
+
+        return false;
     }
 }
 

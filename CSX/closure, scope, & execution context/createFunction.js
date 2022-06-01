@@ -1,4 +1,4 @@
-function createFunction() {
+const createFunction = () => {
     return function hello() {
         return 'hello world';
     }
