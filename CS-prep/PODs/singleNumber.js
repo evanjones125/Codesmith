@@ -33,3 +33,11 @@ function singleNumber(arr) {
   }
   
   singleNumberTests() // uncomment to test
+
+
+//You are given an array of integers. Every number in the array appears twice, except for one. Find that single one.
+// Challenge: solve this with linear time complexity
+// Ex:
+// Input: [2, 2, 1] Output: 1
+// Input: [4, 1, 2, 1, 2] Output: 4
+// Input: [1] Output: 1
