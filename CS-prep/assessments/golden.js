@@ -1,10 +1,11 @@
 const goldenSequence = n => {
-    // set base cases    
-    // if (n === 0) return 0;
-    // if (n === 1) return 1;
+    // recursive solution (linear time complexity)
+        // set base cases    
+        // if (n === 0) return 0;
+        // if (n === 1) return 1;
 
-    // // recursively find nth term in FS using the recursive formula
-    // return goldenSequence(n - 1) + goldenSequence(n - 2);
+        // // recursively find nth term in FS using the recursive formula
+        // return goldenSequence(n - 1) + goldenSequence(n - 2);
 
     let rootFive = Math.sqrt(5);
 

@@ -7,6 +7,9 @@ class Player {
     // Methods would go here... not sure if we'd ever need them
   }
   
-  const player = new Player(prompt("What's your name?", "Please enter your name."), [])
+  //we want to create separate objects for each player
+  const username = prompt("What's your name?", "Type name here.")
+  const player = new Player(username, [])
+  console.log(username);
   
   

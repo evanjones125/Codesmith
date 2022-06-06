@@ -1,6 +1,3 @@
-
-
-
 function palindrome(string) {
     
     if (string.length <= 1) return true;
