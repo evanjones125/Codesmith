@@ -1,8 +1,13 @@
 const select = (arr, callback) => {
-    if (!arr.length) return null;
-    else {
-        return callback(arr[0]), select(arr.slice(1), callback);
-    }
+    const output = [];
+    
+    // invoke the callback function on each array element
+    for (let i = 0; i < arr.length; i++) {
+        // if callback condition is met, push element to output array
+        if (callback(arr[i])) output.push(arr[i]);
+      }
+    
+      return output;
   }
   
   const arr = [1, 2, 3, 4, 5];
