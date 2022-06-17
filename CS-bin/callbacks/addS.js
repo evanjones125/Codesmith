@@ -1,1 +1,1 @@
-const addS = word => word + 's'; 
+const addS = word => word + 's';
