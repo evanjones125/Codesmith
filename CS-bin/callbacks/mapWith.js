@@ -1,3 +1,4 @@
+// uses forEach inside of the previously created map function
 const mapWith = (array, callback) => {
     const newArray = [];
 
