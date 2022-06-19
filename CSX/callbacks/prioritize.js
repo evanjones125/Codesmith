@@ -2,18 +2,12 @@ const prioritize = (arr, callback) => {
     const trueArray = [];
     const falseArray = [];
     
-    forEach(arr, function(element) {
+    arr.forEach(element => {
       if (callback(element)) trueArray.push(element);
       if (!callback(element)) falseArray.push(element);
     })
     
     return trueArray.concat(falseArray);
-  }
-  
-  function forEach(array, callback) {
-    for (let i = 0; i < array.length; i++) {
-      callback(array[i]);
-    }
   }
   
   function startsWithS(str) { return str[0].toLowerCase() === 's'; }

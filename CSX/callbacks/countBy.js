@@ -1,24 +1,18 @@
 const countBy = (arr, callback) => {
     const newObj = {};
     
-    forEach(arr, function(element) {
-      if (callback(element) === 'even') {
-              if (!newObj.hasOwnProperty('even')) newObj.even = 1;
-        else newObj.even++;
-      }
-      if (callback(element) === 'odd') {
-              if (!newObj.hasOwnProperty('odd')) newObj.odd = 1;
-        else newObj.odd++;
-      }
+    arr.forEach(element => {
+        if (callback(element) === 'even') {
+            if (!newObj.hasOwnProperty('even')) newObj.even = 1;
+            else newObj.even++;
+        }
+        if (callback(element) === 'odd') {
+            if (!newObj.hasOwnProperty('odd')) newObj.odd = 1;
+            else newObj.odd++;
+        }
     })
     
     return newObj;
-  }
-  
-  function forEach(array, callback) {
-    for (let i = 0; i < array.length; i++) {
-      callback(array[i]);
-    }
   }
   
   function evenOdd(n) {
