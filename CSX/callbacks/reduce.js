@@ -6,7 +6,7 @@ const reduce = (arr, callback, acc) => {
     })
     
     return output;
-  }
+}
   
   const nums = [4, 1, 3];
   const add = function(a, b) { return a + b; }
