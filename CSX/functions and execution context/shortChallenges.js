@@ -120,6 +120,37 @@ const gradeCalculator = grade => {
 }
 
 
+// ---updating array elements---
+function addN(arr, n){
+	for (let i = 0; i < arr.length; i++) {
+    arr[i] += n;
+  }
+  return arr;
+} 
+// console.log(addN([1, 2, 3], 3)); // expected log [4, 5, 6]
+// console.log(addN([3, 4, 5], 2)); // expected log [5, 6, 7]
+
+
+// ---summing array elements---
+function getTheSum(arr){
+    let total = 0;
+    for (let i in arr) total+= arr[i];
+    return total;
+  }
+// console.log(getTheSum([3, 6, 9])); // expected log 18
+// console.log(getTheSum([10, 11, 12])); // expected log 33
+
+
+// ---multiplyAll---
+const multiplyAll = (...ints) => {  
+    let total = 1;
+    for (let i in ints) total *= ints[i];
+    return total;
+  }
+// console.log(multiplyAll(9, 4, 5, 6, 7, 2, 1, 8, 3)) // should log: 362880
+// console.log(multiplyAll(5, 5, 5, 3)) // should log: 375
+
+
 // ---addWaldo---
 const addWaldo = obj => {
     obj["Waldo"] = 'unknown';
