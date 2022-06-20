@@ -82,6 +82,26 @@ calls = jerry(calls);
 // console.log(calls); // should log: 'JerryKramerGeorgeElaine'
 
 
+// ---isOdd---
+const isOdd = num => {
+    // non-recursive
+      return num % 2 === 0 ? false : true;
+    
+    // recursive
+    // if (num === 0) return false;
+    // else if (num === 1) return true;
+    // return isOdd(num - 2);
+}
+
+
+// ---if statements and remainders---
+const iLoveEvenNumbers = num => num % 2 == 0 ? "Oh Yeah Evens!" : "I am too normal for odd numbers";
+
+
+// ---getRemainder---
+const getRemainder = (num1, num2) => num1 > num2 ? num1 % num2 : num2 % num1;
+
+
 // ---addWaldo---
 const addWaldo = obj => {
     obj["Waldo"] = 'unknown';
