@@ -151,6 +151,19 @@ const multiplyAll = (...ints) => {
 // console.log(multiplyAll(5, 5, 5, 3)) // should log: 375
 
 
+// ---counters---
+function imAboutToExplodeWithExcitement(n){
+	while (n >= 1) {
+    console.log(n);
+    n --;
+    if (n == 5) {console.log('Oh wow, I can\'t handle the anticipation')}
+    if (n == 3) {console.log('I\'m about to explode with excitement!')}
+    if (n == 0) {console.log('That was kind of a let down')}
+  }
+}
+// imAboutToExplodeWithExcitement(10); // expected log 10, 9, 8, 7, 6, 'Oh wow, I can't handle the anticipation!', 4, I'm about to explode with excitement!', 2, 1, 'That was kind of a let down'
+
+
 // ---addWaldo---
 const addWaldo = obj => {
     obj["Waldo"] = 'unknown';
