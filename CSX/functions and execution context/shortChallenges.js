@@ -164,6 +164,15 @@ function imAboutToExplodeWithExcitement(n){
 // imAboutToExplodeWithExcitement(10); // expected log 10, 9, 8, 7, 6, 'Oh wow, I can't handle the anticipation!', 4, I'm about to explode with excitement!', 2, 1, 'That was kind of a let down'
 
 
+// ---range---
+function getTheRange(arr){
+    const min = Math.min(...arr);
+    const max = Math.max(...arr);
+    return [min, max, (max - min)];
+  }
+  // console.log(getTheRange([3, 2, 5, 4, 7, 9, 10])); // expect log [2, 10, 8]
+
+
 // ---addWaldo---
 const addWaldo = obj => {
     obj["Waldo"] = 'unknown';
