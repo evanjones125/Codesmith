@@ -1,9 +1,8 @@
 function droids(arr) {
-    let result = '';
+    let result = "These are not the droids you're looking for.";
   
     arr.forEach((element) => {
-      if (arr.includes("Droids")) result = "Found Droids!";
-      else result = "These are not the droids you're looking for.";
+      if (element === "Droids") result = "Found Droids!";
     })
     
     return result;
