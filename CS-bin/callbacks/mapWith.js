@@ -9,11 +9,11 @@ const mapWith = (array, callback) => {
     return newArray;
 }
 
-// function forEach(array, callback) {
-// 	for (let i = 0; i < array.length; i++) {
-//     callback(array[i]);
-//   }
-// }
+function forEach(array, callback) {
+	for (let i = 0; i < array.length; i++) {
+    callback(array[i]);
+  }
+}
 
 // const addTwo = num => num + 2;
 
