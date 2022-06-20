@@ -102,6 +102,24 @@ const iLoveEvenNumbers = num => num % 2 == 0 ? "Oh Yeah Evens!" : "I am too norm
 const getRemainder = (num1, num2) => num1 > num2 ? num1 % num2 : num2 % num1;
 
 
+// ---if statements & multiple conditions---
+function greetings(hour) {
+	if (hour < 12) return "Good Morning!";
+  else if (hour < 15) return "Good Afternoon!";
+  else return "Good Night!";
+}
+
+
+// ---gradeCalculator---
+const gradeCalculator = grade => {
+	if (grade >= 90) return "A";
+    if (grade >= 80 && grade < 90) return "B";
+    if (grade >=70 && grade < 80) return "C";
+    if (grade >=60 && grade < 70) return "D";
+	return "F";
+}
+
+
 // ---addWaldo---
 const addWaldo = obj => {
     obj["Waldo"] = 'unknown';
