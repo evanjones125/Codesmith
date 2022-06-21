@@ -2,7 +2,7 @@ const reduce = (arr, callback, acc) => {
     let output = acc;
     
     arr.forEach(element => {
-      output = callback(element, output);
+      output = callback(output, element);
     })
     
     return output;
