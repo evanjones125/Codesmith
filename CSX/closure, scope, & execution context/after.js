@@ -3,7 +3,7 @@ const after = (calls, callback) => {
     let result = undefined;
 
   return function(num) {
-    if (calls !== counter) counter++;
+    if (calls !== counter) counter ++;
     if (calls === counter) result = callback(num);
     return result;
   }
