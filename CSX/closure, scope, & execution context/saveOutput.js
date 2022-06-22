@@ -1,14 +1,12 @@
 const saveOutput = (func, str) => {
-    const pw = str;
     const newObj = {};
-  
     
-    return function(pass) {
-      if (pass !== pw) {
-        newObj[pass] = func(pass);
-        return func(pass);
+    return function(arg) {
+      if (arg !== str) {
+        newObj[arg] = func(arg);
+        return func(arg);
       }
-      if (pass === pw) return newObj;
+      if (arg === str) return newObj;
     }
   }
   
