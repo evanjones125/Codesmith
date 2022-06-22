@@ -4,7 +4,7 @@ const saveOutput = (func, str) => {
     return function(arg) {
       if (arg !== str) {
         newObj[arg] = func(arg);
-        return func(arg);
+        return newObj[arg];
       }
       if (arg === str) return newObj;
     }
