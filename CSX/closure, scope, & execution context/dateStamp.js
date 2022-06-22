@@ -1,6 +1,6 @@
 const dateStamp = func => {
     const newObj = {
-      date: Date(),
+      date: new Date().toDateString(),
       output: undefined
     };
     
