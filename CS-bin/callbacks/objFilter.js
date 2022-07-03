@@ -1,6 +1,10 @@
 const objFilter = (obj, callback) => {
     const output = {};
 
+    for (let key in obj) {
+        if (callback(key) === obj[key]) output[key] = callback(key);
+    }
+
     return output;
 }
 
