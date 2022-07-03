@@ -1,12 +1,8 @@
 const majority = (arr, callback) => {
-    // create counters for trues and falses
     let trues = 0;
     let falses = 0;
 
-    for (let i in arr) {
-        if (callback(arr[i])) trues ++;
-        if (!callback(arr[i])) falses++;
-    }
+    for (let i in arr) callback(arr[i]) ? trues++ : falses++;
 
     if (trues > falses) return true;
     return false;
