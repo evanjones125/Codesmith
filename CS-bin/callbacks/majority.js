@@ -4,8 +4,7 @@ const majority = (arr, callback) => {
 
     for (let i in arr) callback(arr[i]) ? trues++ : falses++;
 
-    if (trues > falses) return true;
-    return false;
+    return trues > falses ? true : false;
 }
 
 const isOdd = function(num) { return num % 2 === 1; };
