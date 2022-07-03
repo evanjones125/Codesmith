@@ -1,1 +1,0 @@
-const addTwo = num => num + 2;
