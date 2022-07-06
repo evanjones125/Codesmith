@@ -2,7 +2,7 @@
 ## Repository for various Codesmith challenge solutions as I prepare for the Codesmith application.
 
 ## CSX:
--Functions and execution context: 100% complete and pass the checks
+-Functions and execution context: 100% complete and pass the checks\
 -Callbacks: 100%\
 -Closure: 100%\
 -Recursion: 100%\
