@@ -3,9 +3,9 @@
 
 ## CSX:
 -Functions and execution context: 100% complete and pass the checks
--Callbacks: 100%__
--Closure: 100%__
--Recursion: 100%__
+-Callbacks: 100%\
+-Closure: 100%\
+-Recursion: 100%\
 -OOP: 100%
 
 ## CS Bin:
