@@ -1,15 +1,17 @@
 const createSecretHolder = secret => {
+    let current = secret;
+    
     return output = {
         getSecret: function() {
-            return secret;
+            return current;
         },
-        setSecret: function() {
-            return secret;
+        setSecret: function(num) {
+            current = num;
         }
     }
 }
 
 obj = createSecretHolder(5)
-obj.getSecret() // => returns 5
+console.log(obj.getSecret()) // => returns 5
 obj.setSecret(2)
-obj.getSecret() // => returns 2
+console.log(obj.getSecret()) // => returns 2
