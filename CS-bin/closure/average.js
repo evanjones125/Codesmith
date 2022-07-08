@@ -4,9 +4,12 @@ const average = () => {
     const store = [];
 
     return function(num) {
+        // store all arguments in an array
         if (num) store.push(num);
+        // store the total of the array in a variable
         let storeTotal = store.reduce((partialSum, a) => partialSum + a, 0);
 
+        // if there's an argument, divide the array total by the number of invocations with an argument passed
         if (mean > 0 && num) {
             counter++;
             mean = storeTotal / counter;
