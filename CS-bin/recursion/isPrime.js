@@ -1,6 +1,8 @@
 const isPrime = num => {
+    // base case
     if (num < 2) return false;
-
+    
+    // recursive case
 }
 
 console.log(isPrime(1)); //-> false
