@@ -5,11 +5,8 @@ class PersonClass {
     greet = function() { console.log('hello') }
 }
 
-class DeveloperClass {
-    constructor(name) {
-        this.name = name;
-    }
-    introduce = function() { console.log(`Hello World, my name is ${this.name}`) }
+class DeveloperClass extends PersonClass {
+    introduce() { console.log(`Hello World, my name is ${this.name}`) }
 }
 
 const george = new PersonClass;
