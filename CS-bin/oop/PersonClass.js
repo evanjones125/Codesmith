@@ -2,7 +2,7 @@ class PersonClass {
 	constructor(name) {
         this.name = name;
 	}
-    greet = function() { console.log('hello') }
+    greet() { console.log('hello') }
 }
 
 const george = new PersonClass;
