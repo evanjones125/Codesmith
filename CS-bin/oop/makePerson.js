@@ -5,4 +5,7 @@ const makePerson = (name, age) => {
     return person;
 }
 
-console.log(makePerson('shrek', 69));
+const vicky = makePerson('Vicky', 24);
+
+console.log(vicky.name); // -> Logs 'Vicky'
+console.log(vicky.age); // -> Logs 24
