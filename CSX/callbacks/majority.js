@@ -1,10 +1,10 @@
 const majority = (arr, callback) => {
-    const trueArray = [];
-    const falseArray = [];
+    let trues = 0;
+    let falses = 0;
   
-    arr.forEach(element => { callback(element) ? trueArray.push(callback(element)) : falseArray.push(callback(element)) });
+    arr.forEach(element => { callback(element) ? trues ++ : falses ++ });
 
-    return trueArray.length > falseArray.length ? true : false;
+    return trues > falses ? true : false;
   }
   
   const isOdd = function(num) { return num % 2 === 1; };
