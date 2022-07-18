@@ -2,10 +2,7 @@ const majority = (arr, callback) => {
     const trueArray = [];
     const falseArray = [];
   
-    arr.forEach(element => {
-      if (callback(element)) trueArray.push(callback(element));
-      if (!callback(element)) falseArray.push(callback(element));
-    })
+    arr.forEach(element => { callback(element) ? trueArray.push(callback(element)) : falseArray.push(callback(element)) });
 
     return trueArray.length > falseArray.length ? true : false;
   }
